@@ -60,7 +60,7 @@ while True:
                     if msg.toType == 2:
                         may = client.getProfile().mid
                         if may in str(msg.contentMetadata) and 'MENTION' in str(msg.contentMetadata):
-                            pilih = ['[Auto Respon]\nDont Tag Me!','[Auto Respon]\nAda Perlu Apa?','[Auto Respon]\nGw Masih Tidur,Kalo Penting Pc Aja!','[Auto Respon]\n Don't Tag Me!,Iam Busy','[Auto Respon]\nGak Usah Tag Kalo Penting Pc Aja!']
+                            pilih = ['[Auto Respon]\nDont Tag Me!','[Auto Respon]\nAda Perlu Apa?','[Auto Respon]\nGw Masih Tidur,Kalo Penting Pc Aja!','[Auto Respon]\n Dont Tag Me!,Iam Busy','[Auto Respon]\nGak Usah Tag Kalo Penting Pc Aja!']
                             rslt = random.choice(pilih)
                             client.sendText(msg.to, str(rslt))
                         else:
