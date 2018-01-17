@@ -27,6 +27,7 @@ helpMessage =""" ─┅═✥Han SelfBot✥═┅─
 ❂͜͡☆➣ [image:]
 ❂͜͡☆➣ [say:]
 ❂͜͡☆➣ [unsend me]
+❂͜͡☆➣ [speed]
 
 Python 3 Edition
 New Release
@@ -214,9 +215,9 @@ while True:
                                     client.sendText(receiver, str(A))
                                 except Exception as e:
                                     client.sendText(receiver, str(e))
-                            elif text.lower() == 'Sp':
+                            elif text.lower() == 'speed':
                                 start = time.time()
-                                client.sendText(receiver, "TestSpeed")
+                                client.sendText(receiver, "Progress...!")
                                 elapsed_time = time.time() - start
                                 client.sendText(receiver, "%sdetik" % (elapsed_time))
                             elif 'spic' in text.lower():
